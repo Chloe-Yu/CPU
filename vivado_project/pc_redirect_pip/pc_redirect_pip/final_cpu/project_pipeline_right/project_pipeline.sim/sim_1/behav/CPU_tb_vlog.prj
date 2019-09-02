@@ -1,0 +1,24 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../final_cpu.srcs/sources_1/imports/CPU_mxh/hex_to_dec.v"
+verilog xil_defaultlib  "../../../final_cpu.srcs/sources_1/imports/CPU_mxh/data_extend.v"
+verilog xil_defaultlib  "../../../final_cpu.srcs/sources_1/imports/CPU_mxh/mux.v"
+verilog xil_defaultlib  "../../../final_cpu.srcs/sources_1/imports/CPU_mxh/syscall.v"
+verilog xil_defaultlib  "../../../final_cpu.srcs/sources_1/imports/CPU_mxh/RegFile.v"
+verilog xil_defaultlib  "../../../final_cpu.srcs/sources_1/imports/CPU_mxh/RAM.v"
+verilog xil_defaultlib  "../../../final_cpu.srcs/sources_1/imports/CPU_mxh/pcenable.v"
+verilog xil_defaultlib  "../../../final_cpu.srcs/sources_1/imports/CPU_mxh/pc.v"
+verilog xil_defaultlib  "../../../final_cpu.srcs/sources_1/imports/CPU_mxh/pattern.v"
+verilog xil_defaultlib  "../../../final_cpu.srcs/sources_1/imports/CPU_mxh/mux_4_5.v"
+verilog xil_defaultlib  "../../../final_cpu.srcs/sources_1/imports/CPU_mxh/IM.v"
+verilog xil_defaultlib  "../../../final_cpu.srcs/sources_1/imports/CPU_mxh/counter.v"
+verilog xil_defaultlib  "../../../final_cpu.srcs/sources_1/imports/CPU_mxh/controller.v"
+verilog xil_defaultlib  "../../../final_cpu.srcs/sources_1/imports/CPU_mxh/ALU.v"
+verilog xil_defaultlib  "../../../final_cpu.srcs/sources_1/imports/CPU_mxh/npc.v"
+verilog xil_defaultlib  "../../../final_cpu.srcs/sources_1/imports/CPU_mxh/CPU.v"
+verilog xil_defaultlib  "../../../final_cpu.srcs/sim_1/imports/sddyzjh/Desktop/CPU_mxh/CPU_tb.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

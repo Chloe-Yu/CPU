@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sun Mar 31 15:19:18 2019
+# Process ID: 11524
+# Log file: F:/CPU/pc_redirect_pip/final_cpu/project_pipeline_right/vivado.log
+# Journal file: F:/CPU/pc_redirect_pip/final_cpu/project_pipeline_right\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/CPU/pc_redirect_pip/final_cpu/project_pipeline_right/project_pipeline.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Anna_/Desktop/pc_redirect_pip/final_cpu/project_pipeline_right' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'F:/Documents/Tencent Files/1090412645/FileRecv/final_cpu/final_cpu/final_cpu.cache/ip', nor could it be found using path 'C:/Users/Anna_/Documents/Tencent Files/1090412645/FileRecv/final_cpu/final_cpu/final_cpu.cache/ip'.
+WARNING: [filemgmt 56-2] IP Output Repository Path: Could not find the directory 'F:/Documents/Tencent Files/1090412645/FileRecv/final_cpu/final_cpu/final_cpu.cache/ip', nor could it be found using path 'C:/Users/Anna_/Documents/Tencent Files/1090412645/FileRecv/final_cpu/final_cpu/final_cpu.cache/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Documents/Tencent Files/1090412645/FileRecv/final_cpu/final_cpu/final_cpu.cache/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/vivado1/Vivado/2015.2/data/ip'.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'set_property' was cancelled
+INFO: [Common 17-344] 'set_property' was cancelled
+INFO: [Common 17-344] 'open_project' was cancelled
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 31 15:20:43 2019...

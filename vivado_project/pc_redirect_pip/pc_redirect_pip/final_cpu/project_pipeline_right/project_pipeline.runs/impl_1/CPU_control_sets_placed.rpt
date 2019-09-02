@@ -1,0 +1,76 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Tue Mar 12 21:33:33 2019
+| Host         : DESKTOP-6FPV8J2 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file CPU_control_sets_placed.rpt
+| Design       : CPU
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    23 |
+| Minimum Number of register sites lost to control set restrictions |    40 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              57 |           50 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             159 |           42 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              32 |           18 |
+| Yes          | Yes                   | No                     |             504 |          237 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------+-----------------------------------+--------------------------------+------------------+----------------+
+|   Clock Signal   |           Enable Signal           |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
++------------------+-----------------------------------+--------------------------------+------------------+----------------+
+|  clock2/clk1     |                                   | choose_display_instance/d/Q[1] |                2 |              4 |
+|  clk_n_IBUF_BUFG |                                   |                                |                9 |             10 |
+|  clk_BUFG        | id_ex_instance/jmp/num_reg[11]    | rst_IBUF                       |                3 |             12 |
+|  clk_BUFG        | id_ex_instance/mtr/num_reg[11]    | rst_IBUF                       |                3 |             12 |
+|  clk_BUFG        | id_ex_instance/sa/num_reg[11]     | rst_IBUF                       |                3 |             12 |
+|  clk_BUFG        | mem_wb_instance/ps/E[0]           | rst_IBUF                       |                3 |             12 |
+|  clock2/clk1     |                                   |                                |                9 |             15 |
+|  clk_n_IBUF_BUFG |                                   | ck/rate3/clk_N                 |                8 |             31 |
+|  clk_n_IBUF_BUFG |                                   | ck/rate4/clk_N                 |                8 |             31 |
+|  clk_n_IBUF_BUFG |                                   | clock2/counter[31]_i_1__2_n_1  |                8 |             31 |
+|  clk_n_IBUF_BUFG |                                   | ck/rate2/clk_N                 |                8 |             31 |
+|  clk_n_IBUF_BUFG |                                   | ck/rate1/clk_N                 |                8 |             31 |
+|  clk_BUFG        | id_ex_instance/sc/data_reg[31][0] | rst_IBUF                       |               18 |             32 |
+|  clk_BUFG        | id_ex_instance/w/E[0]             | rst_IBUF                       |               14 |             32 |
+|  n_0_1132_BUFG   |                                   |                                |               32 |             32 |
+|  clk_BUFG        | id_ex_instance/w/E[0]             | id_ex_instance/w/SR[0]         |               39 |             63 |
+|  ck_n_1_BUFG     | mem_wb_instance/rr/q_reg[1]       |                                |               12 |             96 |
+|  clk_BUFG        | ex_mem_instance/alu/q_reg[30]_3   |                                |               32 |            128 |
+|  clk_BUFG        | ex_mem_instance/alu/q_reg[30]_2   |                                |               32 |            128 |
+|  clk_BUFG        | ex_mem_instance/alu/q_reg[30]_1   |                                |               32 |            128 |
+|  clk_BUFG        | ex_mem_instance/alu/q_reg[30]_0   |                                |               32 |            128 |
+|  clk_BUFG        | mem_wb_instance/ps/E[0]           | id_ex_instance/jmp/SR[0]       |               66 |            149 |
+|  clk_BUFG        | mem_wb_instance/ps/E[0]           | mem_wb_instance/ps/q_reg_1     |              106 |            212 |
++------------------+-----------------------------------+--------------------------------+------------------+----------------+
+
+

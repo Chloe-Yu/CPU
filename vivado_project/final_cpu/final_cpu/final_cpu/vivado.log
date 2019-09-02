@@ -1,0 +1,134 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sat Mar 30 13:20:47 2019
+# Process ID: 18236
+# Log file: F:/CPU/final_cpu/final_cpu/vivado.log
+# Journal file: F:/CPU/final_cpu/final_cpu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/CPU/final_cpu/final_cpu/final_cpu.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Administrator/Documents/Tencent Files/1090412645/FileRecv/final_cpu/cpu_4.xpr/cpu_1/archive_project_summary.txt'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/Administrator/Documents/Tencent Files/1090412645/FileRecv/final_cpu/final_cpu/final_cpu.cache/ip'.
+WARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'C:/Users/Administrator/Documents/Tencent Files/1090412645/FileRecv/final_cpu/final_cpu/final_cpu.cache/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Administrator/Documents/Tencent Files/1090412645/FileRecv/final_cpu/final_cpu/final_cpu.cache/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/vivado1/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 685.691 ; gain = 148.078
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: CPU
+WARNING: [Synth 8-2611] redeclaration of ansi port BGTZ is not allowed [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/controller.v:22]
+WARNING: [Synth 8-976] BGTZ has already been declared [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/controller.v:22]
+WARNING: [Synth 8-2654] second declaration of BGTZ ignored [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/controller.v:22]
+INFO: [Synth 8-994] BGTZ is declared here [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/controller.v:20]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:47 ; elapsed = 00:01:12 . Memory (MB): peak = 720.086 ; gain = 548.617
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'CPU' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/CPU.v:2]
+	Parameter Constant_two bound to: 5'b00010 
+	Parameter Constant_four bound to: 5'b00100 
+	Parameter Constant_one_f bound to: 5'b11111 
+WARNING: [Synth 8-387] label required on module instance [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/CPU.v:15]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:21]
+INFO: [Synth 8-638] synthesizing module 'divider' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:43]
+	Parameter N bound to: 1562500 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'divider' (1#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:43]
+INFO: [Synth 8-638] synthesizing module 'divider__parameterized0' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:43]
+	Parameter N bound to: 3125000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'divider__parameterized0' (1#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:43]
+INFO: [Synth 8-638] synthesizing module 'divider__parameterized1' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:43]
+	Parameter N bound to: 6250000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'divider__parameterized1' (1#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:43]
+INFO: [Synth 8-638] synthesizing module 'divider__parameterized2' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:43]
+	Parameter N bound to: 12500000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'divider__parameterized2' (1#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:43]
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (2#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:21]
+INFO: [Synth 8-638] synthesizing module 'divider__parameterized3' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:43]
+	Parameter N bound to: 10000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'divider__parameterized3' (2#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:43]
+INFO: [Synth 8-638] synthesizing module 'PC' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pc.v:3]
+INFO: [Synth 8-256] done synthesizing module 'PC' (3#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pc.v:3]
+INFO: [Synth 8-638] synthesizing module 'IM' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/IM.v:2]
+INFO: [Synth 8-256] done synthesizing module 'IM' (4#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/IM.v:2]
+INFO: [Synth 8-638] synthesizing module 'controller' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/controller.v:2]
+INFO: [Synth 8-256] done synthesizing module 'controller' (5#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/controller.v:2]
+INFO: [Synth 8-638] synthesizing module 'mux_2_5' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/mux.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mux_2_5' (6#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/mux.v:12]
+INFO: [Synth 8-638] synthesizing module 'mux_4_5' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/mux_4_5.v:1]
+INFO: [Synth 8-256] done synthesizing module 'mux_4_5' (7#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/mux_4_5.v:1]
+INFO: [Synth 8-638] synthesizing module 'mux' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/mux.v:1]
+INFO: [Synth 8-256] done synthesizing module 'mux' (8#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/mux.v:1]
+INFO: [Synth 8-638] synthesizing module 'RegFile' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/RegFile.v:2]
+INFO: [Synth 8-256] done synthesizing module 'RegFile' (9#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/RegFile.v:2]
+INFO: [Synth 8-638] synthesizing module 'ALU' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/ALU.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/ALU.v:28]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (10#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/ALU.v:2]
+INFO: [Synth 8-638] synthesizing module 'npc' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/npc.v:5]
+INFO: [Synth 8-638] synthesizing module 'sign_ex_16to32' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/data_extend.v:3]
+INFO: [Synth 8-256] done synthesizing module 'sign_ex_16to32' (11#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/data_extend.v:3]
+INFO: [Synth 8-638] synthesizing module 'zero_ex_16to32' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/data_extend.v:8]
+INFO: [Synth 8-256] done synthesizing module 'zero_ex_16to32' (12#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/data_extend.v:8]
+INFO: [Synth 8-256] done synthesizing module 'npc' (13#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/npc.v:5]
+INFO: [Synth 8-638] synthesizing module 'RAM' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/RAM.v:5]
+INFO: [Synth 8-226] default block is never used [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/RAM.v:1057]
+INFO: [Synth 8-256] done synthesizing module 'RAM' (14#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/RAM.v:5]
+INFO: [Synth 8-638] synthesizing module 'syscall' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/syscall.v:3]
+INFO: [Synth 8-256] done synthesizing module 'syscall' (15#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/syscall.v:3]
+INFO: [Synth 8-638] synthesizing module 'choose_display' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pattern.v:31]
+INFO: [Synth 8-638] synthesizing module 'hex_to_dec' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/hex_to_dec.v:3]
+INFO: [Synth 8-256] done synthesizing module 'hex_to_dec' (16#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/hex_to_dec.v:3]
+INFO: [Synth 8-638] synthesizing module 'display' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pattern.v:95]
+INFO: [Synth 8-638] synthesizing module 'pattern' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pattern.v:3]
+INFO: [Synth 8-226] default block is never used [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pattern.v:9]
+INFO: [Synth 8-256] done synthesizing module 'pattern' (17#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pattern.v:3]
+INFO: [Synth 8-226] default block is never used [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pattern.v:130]
+INFO: [Synth 8-256] done synthesizing module 'display' (18#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pattern.v:95]
+INFO: [Synth 8-226] default block is never used [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pattern.v:69]
+INFO: [Synth 8-256] done synthesizing module 'choose_display' (19#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pattern.v:31]
+INFO: [Synth 8-638] synthesizing module 'three_counter' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/counter.v:15]
+INFO: [Synth 8-638] synthesizing module 'counter' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/counter.v:3]
+INFO: [Synth 8-256] done synthesizing module 'counter' (20#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/counter.v:3]
+INFO: [Synth 8-256] done synthesizing module 'three_counter' (21#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/counter.v:15]
+INFO: [Synth 8-638] synthesizing module 'pcenable' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pcenable.v:19]
+INFO: [Synth 8-638] synthesizing module 'D_FF' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pcenable.v:3]
+INFO: [Synth 8-256] done synthesizing module 'D_FF' (22#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pcenable.v:3]
+INFO: [Synth 8-256] done synthesizing module 'pcenable' (23#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pcenable.v:19]
+INFO: [Synth 8-256] done synthesizing module 'CPU' (24#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/CPU.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:49 ; elapsed = 00:01:13 . Memory (MB): peak = 744.582 ; gain = 573.113
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:49 ; elapsed = 00:01:14 . Memory (MB): peak = 744.582 ; gain = 573.113
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-141] Inserted 16 OBUFs to IO ports without IO buffers.
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:08 ; elapsed = 00:01:32 . Memory (MB): peak = 1058.375 ; gain = 886.906
+66 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1058.375 ; gain = 338.289
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 31 15:19:37 2019...

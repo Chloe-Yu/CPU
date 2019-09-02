@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/final_cpu/final_cpu.sim/sim_1/synth/func/CPU_tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-311] analyzing module D_FF
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-311] analyzing module choose_display
+INFO: [VRFC 10-311] analyzing module clk_divider
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module counter_0
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-311] analyzing module divider__parameterized0
+INFO: [VRFC 10-311] analyzing module divider__parameterized1
+INFO: [VRFC 10-311] analyzing module divider__parameterized2
+INFO: [VRFC 10-311] analyzing module divider__parameterized3
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-311] analyzing module pcenable
+INFO: [VRFC 10-311] analyzing module syscall
+INFO: [VRFC 10-311] analyzing module three_counter
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/final_cpu/final_cpu.srcs/sim_1/imports/sddyzjh/Desktop/CPU_mxh/CPU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/final_cpu/final_cpu.sim/sim_1/synth/func/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-1195] overwriting previous definition of module glbl [E:/final_cpu/final_cpu.sim/sim_1/synth/func/glbl.v:6]

@@ -1,0 +1,1253 @@
+
+*** Running vivado
+    with args -log CPU.vds -m64 -mode batch -messageDb vivado.pb -notrace -source CPU.tcl
+
+WARNING: Default location for XILINX_VIVADO_HLS not found: 
+
+****** Vivado v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source CPU.tcl -notrace
+Command: synth_design -top CPU -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+WARNING: [Synth 8-1102] /* in comment [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/IM.v:311]
+WARNING: [Synth 8-2611] redeclaration of ansi port LH is not allowed [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/controller.v:22]
+WARNING: [Synth 8-2611] redeclaration of ansi port BGTZ is not allowed [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/controller.v:22]
+WARNING: [Synth 8-976] LH has already been declared [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/controller.v:22]
+WARNING: [Synth 8-2654] second declaration of LH ignored [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/controller.v:22]
+INFO: [Synth 8-994] LH is declared here [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/controller.v:19]
+INFO: [Synth 8-994] BGTZ is declared here [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/controller.v:20]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 256.000 ; gain = 84.551
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'CPU' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/CPU.v:2]
+	Parameter Constant_two bound to: 5'b00010 
+	Parameter Constant_four bound to: 5'b00100 
+	Parameter Constant_one_f bound to: 5'b11111 
+WARNING: [Synth 8-387] label required on module instance [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/CPU.v:15]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:21]
+INFO: [Synth 8-638] synthesizing module 'divider' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:43]
+	Parameter N bound to: 1562500 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'divider' (1#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:43]
+INFO: [Synth 8-638] synthesizing module 'divider__parameterized0' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:43]
+	Parameter N bound to: 3125000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'divider__parameterized0' (1#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:43]
+INFO: [Synth 8-638] synthesizing module 'divider__parameterized1' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:43]
+	Parameter N bound to: 6250000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'divider__parameterized1' (1#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:43]
+INFO: [Synth 8-638] synthesizing module 'divider__parameterized2' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:43]
+	Parameter N bound to: 12500000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'divider__parameterized2' (1#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:43]
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (2#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:21]
+INFO: [Synth 8-638] synthesizing module 'divider__parameterized3' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:43]
+	Parameter N bound to: 10000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'divider__parameterized3' (2#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/new/divider.v:43]
+INFO: [Synth 8-638] synthesizing module 'PC' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pc.v:3]
+INFO: [Synth 8-256] done synthesizing module 'PC' (3#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pc.v:3]
+INFO: [Synth 8-638] synthesizing module 'IM' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/IM.v:2]
+INFO: [Synth 8-256] done synthesizing module 'IM' (4#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/IM.v:2]
+INFO: [Synth 8-638] synthesizing module 'controller' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/controller.v:2]
+INFO: [Synth 8-256] done synthesizing module 'controller' (5#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/controller.v:2]
+INFO: [Synth 8-638] synthesizing module 'mux_2_5' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/mux.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mux_2_5' (6#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/mux.v:12]
+INFO: [Synth 8-638] synthesizing module 'mux_4_5' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/mux_4_5.v:1]
+INFO: [Synth 8-256] done synthesizing module 'mux_4_5' (7#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/mux_4_5.v:1]
+INFO: [Synth 8-638] synthesizing module 'mux' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/mux.v:1]
+INFO: [Synth 8-256] done synthesizing module 'mux' (8#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/mux.v:1]
+INFO: [Synth 8-638] synthesizing module 'RegFile' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/RegFile.v:2]
+INFO: [Synth 8-256] done synthesizing module 'RegFile' (9#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/RegFile.v:2]
+INFO: [Synth 8-638] synthesizing module 'ALU' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/ALU.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/ALU.v:28]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (10#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/ALU.v:2]
+INFO: [Synth 8-638] synthesizing module 'npc' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/npc.v:5]
+INFO: [Synth 8-638] synthesizing module 'sign_ex_16to32' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/data_extend.v:3]
+INFO: [Synth 8-256] done synthesizing module 'sign_ex_16to32' (11#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/data_extend.v:3]
+INFO: [Synth 8-638] synthesizing module 'zero_ex_16to32' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/data_extend.v:8]
+INFO: [Synth 8-256] done synthesizing module 'zero_ex_16to32' (12#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/data_extend.v:8]
+INFO: [Synth 8-256] done synthesizing module 'npc' (13#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/npc.v:5]
+INFO: [Synth 8-638] synthesizing module 'RAM' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/RAM.v:5]
+INFO: [Synth 8-226] default block is never used [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/RAM.v:1057]
+INFO: [Synth 8-256] done synthesizing module 'RAM' (14#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/RAM.v:5]
+INFO: [Synth 8-638] synthesizing module 'syscall' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/syscall.v:3]
+INFO: [Synth 8-256] done synthesizing module 'syscall' (15#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/syscall.v:3]
+INFO: [Synth 8-638] synthesizing module 'choose_display' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pattern.v:31]
+INFO: [Synth 8-638] synthesizing module 'hex_to_dec' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/hex_to_dec.v:3]
+INFO: [Synth 8-256] done synthesizing module 'hex_to_dec' (16#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/hex_to_dec.v:3]
+INFO: [Synth 8-638] synthesizing module 'display' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pattern.v:95]
+INFO: [Synth 8-638] synthesizing module 'pattern' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pattern.v:3]
+INFO: [Synth 8-226] default block is never used [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pattern.v:9]
+INFO: [Synth 8-256] done synthesizing module 'pattern' (17#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pattern.v:3]
+INFO: [Synth 8-226] default block is never used [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pattern.v:130]
+INFO: [Synth 8-256] done synthesizing module 'display' (18#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pattern.v:95]
+INFO: [Synth 8-226] default block is never used [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pattern.v:69]
+INFO: [Synth 8-256] done synthesizing module 'choose_display' (19#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pattern.v:31]
+INFO: [Synth 8-638] synthesizing module 'three_counter' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/counter.v:15]
+INFO: [Synth 8-638] synthesizing module 'counter' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/counter.v:3]
+INFO: [Synth 8-256] done synthesizing module 'counter' (20#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/counter.v:3]
+INFO: [Synth 8-256] done synthesizing module 'three_counter' (21#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/counter.v:15]
+INFO: [Synth 8-638] synthesizing module 'pcenable' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pcenable.v:19]
+INFO: [Synth 8-638] synthesizing module 'D_FF' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pcenable.v:3]
+INFO: [Synth 8-256] done synthesizing module 'D_FF' (22#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pcenable.v:3]
+INFO: [Synth 8-256] done synthesizing module 'pcenable' (23#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/pcenable.v:19]
+INFO: [Synth 8-256] done synthesizing module 'CPU' (24#1) [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/CPU.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 282.023 ; gain = 110.574
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 282.023 ; gain = 110.574
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 597.148 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 597.148 ; gain = 425.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 597.148 ; gain = 425.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 7 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 7 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 13 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 13 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 14 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 14 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 15 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 15 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 16 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 16 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 17 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 17 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 18 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 18 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 60 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 60 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 61 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 61 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 62 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 62 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 63 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 63 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 64 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 64 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 65 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 65 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 66 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 66 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 68 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 68 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 70 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 70 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 71 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 71 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 72 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 72 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 73 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 73 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 74 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 74 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 75 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 75 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 76 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 76 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 77 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 77 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 597.148 ; gain = 425.699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "im_mem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "XORI0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "LH0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SV0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SLTU0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "NOR0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SUB0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SRL0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SRA0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SLL0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SW0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "JAL0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SYSCALL0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "BEQ0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "BNE0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "JR0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "BGTZ0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "LW0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDIU0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDI0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDU0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADD0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ANDI0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "AND0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ORI0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "OR0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SLTI0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SLT0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "J0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "XORI0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "LH0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SV0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SLTU0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "NOR0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SUB0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SRL0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SRA0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SLL0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SW0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "JAL0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SYSCALL0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "BEQ0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "BNE0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "JR0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "BGTZ0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "LW0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDIU0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDI0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDU0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADD0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ANDI0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "AND0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ORI0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "OR0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SLTI0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SLT0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "J0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "MemToReg0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "MemWrite0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ALU_SRC0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RegWrite0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SysCALL0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SignedExt0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RegDst0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Beq0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Bne0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "JMP0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SV0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LH0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BGTZ0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/ALU.v:28]
+WARNING: [Synth 8-327] inferring latch for variable 'Result_reg' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/ALU.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'Result2_reg' [F:/CPU/final_cpu/final_cpu/final_cpu.srcs/sources_1/imports/CPU_mxh/ALU.v:33]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 597.148 ; gain = 425.699
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 8     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 78    
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 7     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	 285 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 8     
+	  14 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	  14 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 8     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 54    
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 30    
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	  14 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module CPU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module divider__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module divider__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module divider__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module clk_divider 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 1     
+Module divider__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module IM 
+Detailed RTL Component Info : 
++---Muxes : 
+	 285 Input     32 Bit        Muxes := 1     
+Module controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input     17 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 30    
+	   2 Input      1 Bit        Muxes := 2     
+Module mux_2_5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module mux_4_5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+Module mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	  14 Input     32 Bit        Muxes := 2     
+	  14 Input      1 Bit        Muxes := 2     
+Module npc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+Module RAM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+Module syscall 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module hex_to_dec 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 26    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 18    
+Module pattern 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      8 Bit        Muxes := 1     
+Module display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+Module choose_display 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module D_FF 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module pcenable 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 597.148 ; gain = 425.699
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "rate3/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "rate3/clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "rate1/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "rate1/clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "rate2/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "rate2/clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "rate4/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "rate4/clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "rate4/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "rate4/clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "rate2/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "rate2/clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "rate1/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "rate1/clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "rate3/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "rate3/clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "clk_N" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP Result0, operation Mode is: A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: Generating DSP Result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: Generating DSP Result0, operation Mode is: A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: Generating DSP Result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 597.148 ; gain = 425.699
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 597.148 ; gain = 425.699
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: 
++------------+---------------------------+-----------+----------------------+------------------+-------------------+
+|Module Name | RTL Object                | Inference | Size (Depth x Width) | Primitives       | Hierarchical Name | 
++------------+---------------------------+-----------+----------------------+------------------+-------------------+
+|CPU         | mem1_reg                  | Implied   | 1 K x 8              | RAM256X1S x 32   | CPU/RAM/ram__10   | 
+|CPU         | mem2_reg                  | Implied   | 1 K x 8              | RAM256X1S x 32   | CPU/RAM/ram__12   | 
+|CPU         | mem3_reg                  | Implied   | 1 K x 8              | RAM256X1S x 32   | CPU/RAM/ram__14   | 
+|CPU         | mem4_reg                  | Implied   | 1 K x 8              | RAM256X1S x 32   | CPU/RAM/ram__16   | 
+|CPU         | RegFile_instance/regs_reg | Implied   | 32 x 32              | RAM32M x 12      | CPU/ram__18       | 
++------------+---------------------------+-----------+----------------------+------------------+-------------------+
+
+Note: The table shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the Distributed RAM name as it appears in the hierarchical module and only part of it is displayed.
+DSP:
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B            | No           | 18     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | No           | 15     | 15     | 30     | 25     | 30     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|ALU         | A*B            | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | No           | 18     | 15     | 31     | 25     | 47     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[31] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[30] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[29] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[28] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[27] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[26] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[25] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[24] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[23] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[22] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[21] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[20] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[19] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[18] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[17] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[16] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[15] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[14] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[13] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[12] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[11] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[10] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[9] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[8] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[7] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[6] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[5] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[4] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[3] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[2] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[1] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\Result2_reg[0] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\three_counter_instance/c1/num_reg[12] ) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (\three_counter_instance/c1/num_reg[13] ) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (\three_counter_instance/c1/num_reg[14] ) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (\three_counter_instance/c1/num_reg[15] ) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (\three_counter_instance/c2/num_reg[12] ) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (\three_counter_instance/c2/num_reg[13] ) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (\three_counter_instance/c2/num_reg[14] ) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (\three_counter_instance/c2/num_reg[15] ) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (\three_counter_instance/c3/num_reg[12] ) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (\three_counter_instance/c3/num_reg[13] ) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (\three_counter_instance/c3/num_reg[14] ) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (\three_counter_instance/c3/num_reg[15] ) is unused and will be removed from module CPU.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 597.148 ; gain = 425.699
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 597.148 ; gain = 425.699
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 597.148 ; gain = 425.699
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 7 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 7 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 13 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 13 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 14 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 14 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 15 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 15 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 16 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 16 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 17 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 17 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 18 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 18 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 60 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 60 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 61 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 61 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 62 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 62 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 63 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 63 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 64 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 64 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 65 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 65 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 66 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 66 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 68 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 68 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 70 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 70 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 71 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 71 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 72 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 72 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 73 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 73 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 74 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 74 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 75 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 75 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 76 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 76 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 77 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 77 of file F:/CPU/final_cpu/final_cpu/final_cpu.srcs/constrs_1/imports/CPU/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 639.199 ; gain = 467.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 641.113 ; gain = 469.664
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 716.508 ; gain = 545.059
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 716.508 ; gain = 545.059
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 716.508 ; gain = 545.059
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 716.508 ; gain = 545.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 716.508 ; gain = 545.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 716.508 ; gain = 545.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     3|
+|2     |CARRY4    |   384|
+|3     |DSP48E1   |     3|
+|4     |LUT1      |   294|
+|5     |LUT2      |    96|
+|6     |LUT3      |   703|
+|7     |LUT4      |   131|
+|8     |LUT5      |   764|
+|9     |LUT6      |   667|
+|10    |MUXF7     |    47|
+|11    |RAM256X1S |   128|
+|12    |RAM32M    |    12|
+|13    |FDCE      |    32|
+|14    |FDRE      |   249|
+|15    |FDSE      |     4|
+|16    |LD        |    48|
+|17    |IBUF      |     7|
+|18    |OBUF      |    16|
++------+----------+------+
+
+Report Instance Areas: 
++------+-----------------------------------------+------------------------+------+
+|      |Instance                                 |Module                  |Cells |
++------+-----------------------------------------+------------------------+------+
+|1     |top                                      |                        |  3588|
+|2     |  mux_RegFile_W_addr                     |mux_4_5                 |     5|
+|3     |  ALU_instance                           |ALU                     |   106|
+|4     |  RAM_instance                           |RAM                     |   161|
+|5     |  RegFile_instance                       |RegFile                 |    50|
+|6     |  choose_display_instance                |choose_display          |    30|
+|7     |    d                                    |display                 |    30|
+|8     |  clock2                                 |divider__parameterized3 |    82|
+|9     |  mux_ALU_inputB                         |mux                     |    23|
+|10    |  mux_RegFile_DIN_ALU_Result_or_RAM_dout |mux_0                   |    15|
+|11    |  mux_RegFile_DIN_temp_or_PC             |mux_1                   |    32|
+|12    |  nolabel_line15                         |clk_divider             |   329|
+|13    |    rate1                                |divider__parameterized0 |    82|
+|14    |    rate2                                |divider__parameterized1 |    82|
+|15    |    rate3                                |divider                 |    82|
+|16    |    rate4                                |divider__parameterized2 |    83|
+|17    |  pc_instance                            |PC                      |  2402|
+|18    |  pcenable_instance                      |pcenable                |     2|
+|19    |    d                                    |D_FF                    |     2|
+|20    |  syscall_instance                       |syscall                 |    82|
+|21    |  three_counter_instance                 |three_counter           |   243|
+|22    |    c1                                   |counter                 |   107|
+|23    |    c2                                   |counter_2               |    69|
+|24    |    c3                                   |counter_3               |    67|
++------+-----------------------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 716.508 ; gain = 545.059
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 46 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 716.508 ; gain = 209.367
+Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 716.508 ; gain = 545.059
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 582 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 188 instances were transformed.
+  LD => LDCE: 48 instances
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 128 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+173 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 716.508 ; gain = 525.883
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.114 . Memory (MB): peak = 716.508 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 07 02:49:54 2019...

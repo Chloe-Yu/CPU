@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="CPU_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="CPU_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="62" />
+   <wave_markers>
+      <marker time="291000000" label="" />
+      <marker time="181000000" label="" />
+      <marker time="179000000" label="" />
+   </wave_markers>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/dispmode" type="array">
+      <obj_property name="ElementShortName">dispmode[1:0]</obj_property>
+      <obj_property name="ObjectShortName">dispmode[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/clkswitch" type="array">
+      <obj_property name="ElementShortName">clkswitch[1:0]</obj_property>
+      <obj_property name="ObjectShortName">clkswitch[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/cpu_sel" type="array">
+      <obj_property name="ElementShortName">cpu_sel[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cpu_sel[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/cpu_seg" type="array">
+      <obj_property name="ElementShortName">cpu_seg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cpu_seg[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/choose_display_instance/LedData" type="array">
+      <obj_property name="ElementShortName">LedData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">LedData[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/r1" type="array">
+      <obj_property name="ElementShortName">r1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">r1[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/r2" type="array">
+      <obj_property name="ElementShortName">r2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">r2[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/w" type="array">
+      <obj_property name="ElementShortName">w[4:0]</obj_property>
+      <obj_property name="ObjectShortName">w[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/we" type="logic">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/din" type="array">
+      <obj_property name="ElementShortName">din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">din[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/a" type="array">
+      <obj_property name="ElementShortName">a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">a[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/b" type="array">
+      <obj_property name="ElementShortName">b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs" type="array">
+      <obj_property name="ElementShortName">regs[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">regs[31:0][31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[31]" type="array">
+         <obj_property name="ElementShortName">[31][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[31][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[30]" type="array">
+         <obj_property name="ElementShortName">[30][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[30][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[29]" type="array">
+         <obj_property name="ElementShortName">[29][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[29][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[28]" type="array">
+         <obj_property name="ElementShortName">[28][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[28][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[27]" type="array">
+         <obj_property name="ElementShortName">[27][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[27][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[26]" type="array">
+         <obj_property name="ElementShortName">[26][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[26][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[25]" type="array">
+         <obj_property name="ElementShortName">[25][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[25][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[24]" type="array">
+         <obj_property name="ElementShortName">[24][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[24][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[23]" type="array">
+         <obj_property name="ElementShortName">[23][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[23][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[22]" type="array">
+         <obj_property name="ElementShortName">[22][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[22][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[21]" type="array">
+         <obj_property name="ElementShortName">[21][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[21][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[20]" type="array">
+         <obj_property name="ElementShortName">[20][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[20][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[19]" type="array">
+         <obj_property name="ElementShortName">[19][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[19][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[18]" type="array">
+         <obj_property name="ElementShortName">[18][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[18][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[17]" type="array">
+         <obj_property name="ElementShortName">[17][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[17][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[16]" type="array">
+         <obj_property name="ElementShortName">[16][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[16][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[15]" type="array">
+         <obj_property name="ElementShortName">[15][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[15][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[14]" type="array">
+         <obj_property name="ElementShortName">[14][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[14][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[13]" type="array">
+         <obj_property name="ElementShortName">[13][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[13][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[12]" type="array">
+         <obj_property name="ElementShortName">[12][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[12][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[11]" type="array">
+         <obj_property name="ElementShortName">[11][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[11][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[10]" type="array">
+         <obj_property name="ElementShortName">[10][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[10][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[9]" type="array">
+         <obj_property name="ElementShortName">[9][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[9][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[8]" type="array">
+         <obj_property name="ElementShortName">[8][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[8][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[7]" type="array">
+         <obj_property name="ElementShortName">[7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[7][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[6]" type="array">
+         <obj_property name="ElementShortName">[6][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[6][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[5]" type="array">
+         <obj_property name="ElementShortName">[5][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[5][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[4]" type="array">
+         <obj_property name="ElementShortName">[4][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[4][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[3]" type="array">
+         <obj_property name="ElementShortName">[3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[3][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[2]" type="array">
+         <obj_property name="ElementShortName">[2][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[2][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[1]" type="array">
+         <obj_property name="ElementShortName">[1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[1][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RegFile_instance/regs[0]" type="array">
+         <obj_property name="ElementShortName">[0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">regs[0][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/OP_CODE" type="array">
+      <obj_property name="ElementShortName">OP_CODE[5:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_CODE[5:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/FUNC" type="array">
+      <obj_property name="ElementShortName">FUNC[5:0]</obj_property>
+      <obj_property name="ObjectShortName">FUNC[5:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/ALU_OP" type="array">
+      <obj_property name="ElementShortName">ALU_OP[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_OP[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/MemToReg" type="logic">
+      <obj_property name="ElementShortName">MemToReg</obj_property>
+      <obj_property name="ObjectShortName">MemToReg</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/MemWrite" type="logic">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/ALU_SRC" type="logic">
+      <obj_property name="ElementShortName">ALU_SRC</obj_property>
+      <obj_property name="ObjectShortName">ALU_SRC</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/RegWrite" type="logic">
+      <obj_property name="ElementShortName">RegWrite</obj_property>
+      <obj_property name="ObjectShortName">RegWrite</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/SysCALL" type="logic">
+      <obj_property name="ElementShortName">SysCALL</obj_property>
+      <obj_property name="ObjectShortName">SysCALL</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/SignedExt" type="logic">
+      <obj_property name="ElementShortName">SignedExt</obj_property>
+      <obj_property name="ObjectShortName">SignedExt</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/RegDst" type="logic">
+      <obj_property name="ElementShortName">RegDst</obj_property>
+      <obj_property name="ObjectShortName">RegDst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/Beq" type="logic">
+      <obj_property name="ElementShortName">Beq</obj_property>
+      <obj_property name="ObjectShortName">Beq</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/Bne" type="logic">
+      <obj_property name="ElementShortName">Bne</obj_property>
+      <obj_property name="ObjectShortName">Bne</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/JR" type="logic">
+      <obj_property name="ElementShortName">JR</obj_property>
+      <obj_property name="ObjectShortName">JR</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/JMP" type="logic">
+      <obj_property name="ElementShortName">JMP</obj_property>
+      <obj_property name="ObjectShortName">JMP</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/JAL" type="logic">
+      <obj_property name="ElementShortName">JAL</obj_property>
+      <obj_property name="ObjectShortName">JAL</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/SV" type="logic">
+      <obj_property name="ElementShortName">SV</obj_property>
+      <obj_property name="ObjectShortName">SV</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/LH" type="logic">
+      <obj_property name="ElementShortName">LH</obj_property>
+      <obj_property name="ObjectShortName">LH</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/BLEZ" type="logic">
+      <obj_property name="ElementShortName">BLEZ</obj_property>
+      <obj_property name="ObjectShortName">BLEZ</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/SLL" type="logic">
+      <obj_property name="ElementShortName">SLL</obj_property>
+      <obj_property name="ObjectShortName">SLL</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/SRA" type="logic">
+      <obj_property name="ElementShortName">SRA</obj_property>
+      <obj_property name="ObjectShortName">SRA</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/SRL" type="logic">
+      <obj_property name="ElementShortName">SRL</obj_property>
+      <obj_property name="ObjectShortName">SRL</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/ADD" type="logic">
+      <obj_property name="ElementShortName">ADD</obj_property>
+      <obj_property name="ObjectShortName">ADD</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/ADDU" type="logic">
+      <obj_property name="ElementShortName">ADDU</obj_property>
+      <obj_property name="ObjectShortName">ADDU</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/SUB" type="logic">
+      <obj_property name="ElementShortName">SUB</obj_property>
+      <obj_property name="ObjectShortName">SUB</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/AND" type="logic">
+      <obj_property name="ElementShortName">AND</obj_property>
+      <obj_property name="ObjectShortName">AND</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/OR" type="logic">
+      <obj_property name="ElementShortName">OR</obj_property>
+      <obj_property name="ObjectShortName">OR</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/NOR" type="logic">
+      <obj_property name="ElementShortName">NOR</obj_property>
+      <obj_property name="ObjectShortName">NOR</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/SLT" type="logic">
+      <obj_property name="ElementShortName">SLT</obj_property>
+      <obj_property name="ObjectShortName">SLT</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/SLTU" type="logic">
+      <obj_property name="ElementShortName">SLTU</obj_property>
+      <obj_property name="ObjectShortName">SLTU</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/SYSCALL" type="logic">
+      <obj_property name="ElementShortName">SYSCALL</obj_property>
+      <obj_property name="ObjectShortName">SYSCALL</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/J" type="logic">
+      <obj_property name="ElementShortName">J</obj_property>
+      <obj_property name="ObjectShortName">J</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/BEQ" type="logic">
+      <obj_property name="ElementShortName">BEQ</obj_property>
+      <obj_property name="ObjectShortName">BEQ</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/BNE" type="logic">
+      <obj_property name="ElementShortName">BNE</obj_property>
+      <obj_property name="ObjectShortName">BNE</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/ADDI" type="logic">
+      <obj_property name="ElementShortName">ADDI</obj_property>
+      <obj_property name="ObjectShortName">ADDI</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/ANDI" type="logic">
+      <obj_property name="ElementShortName">ANDI</obj_property>
+      <obj_property name="ObjectShortName">ANDI</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/ADDIU" type="logic">
+      <obj_property name="ElementShortName">ADDIU</obj_property>
+      <obj_property name="ObjectShortName">ADDIU</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/SLTI" type="logic">
+      <obj_property name="ElementShortName">SLTI</obj_property>
+      <obj_property name="ObjectShortName">SLTI</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/ORI" type="logic">
+      <obj_property name="ElementShortName">ORI</obj_property>
+      <obj_property name="ObjectShortName">ORI</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/XORI" type="logic">
+      <obj_property name="ElementShortName">XORI</obj_property>
+      <obj_property name="ObjectShortName">XORI</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/LW" type="logic">
+      <obj_property name="ElementShortName">LW</obj_property>
+      <obj_property name="ObjectShortName">LW</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/contro_instance/SW" type="logic">
+      <obj_property name="ElementShortName">SW</obj_property>
+      <obj_property name="ObjectShortName">SW</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RAM_instance/din" type="array">
+      <obj_property name="ElementShortName">din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">din[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RAM_instance/RAM_mode" type="logic">
+      <obj_property name="ElementShortName">RAM_mode</obj_property>
+      <obj_property name="ObjectShortName">RAM_mode</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RAM_instance/WE" type="logic">
+      <obj_property name="ElementShortName">WE</obj_property>
+      <obj_property name="ObjectShortName">WE</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RAM_instance/lh" type="logic">
+      <obj_property name="ElementShortName">lh</obj_property>
+      <obj_property name="ObjectShortName">lh</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/CPU_tb/CPU_test/RAM_instance/out" type="array">
+      <obj_property name="ElementShortName">out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>
